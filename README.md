@@ -14,4 +14,10 @@
 ![nacl-db2](nacl-db-out.png)
 ![nacl-bastion1](nacl-bastion-in.png)
 ![nacl-bastion2](nacl-bastion-out.png)
+- once all security groups and NACL are created we need to associate them with the appropriate subnet
+- once everything in VPC is ready we need to head to `EC2` and create `3 instances` this includes `app` `db` `bastion`
+- app and bastion will have an auto assigned IP but db will not
+- each security group needs to be assigned in the security tab when creating instances
+- once done everything is completed we just need to transfer our `SSH` .pem key to our bastion server then we can use that key to SSH from bastion to DB
+![diagram](vpc-diagram.png)
 
